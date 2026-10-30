@@ -1,0 +1,28 @@
+{
+  "name": "Attacco di Opportunità",
+  "short_name": "AdO",
+  "description": "Scheda personaggio compatibile con la 5ª edizione. Funziona anche senza internet e i dati restano sul dispositivo.",
+  "lang": "it",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e8edef",
+  "theme_color": "#13a89e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "share_target": {
+    "action": "./?condivisione",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [{ "name": "schede", "accept": ["application/json", "text/plain", "application/octet-stream", ".json", ".txt"] }]
+    }
+  },
+  "file_handlers": [
+    { "action": "./", "accept": { "application/json": [".json"] } }
+  ]
+}
