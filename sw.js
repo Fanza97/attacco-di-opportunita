@@ -4,7 +4,7 @@
 // Riceve anche le schede condivise da altre app (menu "Condividi" di Android) e le passa all'app.
 
 // Versione e impronta della pagina, scritte dalla compilazione: cambiano a ogni versione e fanno partire l'aggiornamento.
-const VERSION = '0.20.0-703da685c3'
+const VERSION = '0.20.1-7684935d71'
 const CACHE = `ado-${VERSION}`
 const SHARED = 'ado-condivisi'
 const FILES = [
